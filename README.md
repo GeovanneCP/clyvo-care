@@ -56,7 +56,7 @@ Adota-se uma **arquitetura híbrida de Inteligência Artificial**, combinando pr
 
 O diagrama abaixo ilustra o fluxo completo da solução planejada para o projeto:
 
-![Diagrama Arquitetural Clyvo Care](docs/arquitetura.png)
+![Diagrama Arquitetural Clyvo Care](./docs/arquitetura.png)
 
     📂 6. Estrutura do Repositório (Sprint 3)
         

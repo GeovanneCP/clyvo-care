@@ -56,47 +56,7 @@ Adota-se uma **arquitetura híbrida de Inteligência Artificial**, combinando pr
 
 O diagrama abaixo ilustra o fluxo completo da solução planejada para o projeto:
 
-```mermaid
-flowchart TD
-    subgraph Edge_IoT["Dispositivos e Coleta (Edge / IoT / Visão)"]
-        A1["Sensor Coleira (Wokwi: Acelerômetro e Temp)"]
-        A2["Câmera Residencial (Script Python CV - Tigela/Pet)"]
-        A3["Tutor via WhatsApp / App Clyvo"]
-    end
-
-    subgraph Core_Backend["Core Backend & Integração (Java Spring Boot)"]
-        B1["API Gateway / Controllers RESTful"]
-        B2["Serviço de Ingestão de Telemetria (HealthLogService)"]
-        B3["Orquestrador de Check-ins & Notificações"]
-    end
-
-    subgraph Data_Layer["Camada de Dados (Oracle DB)"]
-        C1[("Oracle Database - DDL Barker")]
-    end
-
-    subgraph AI_Engine["Módulo Inteligente (AI & Analytics)"]
-        D1["LLM Gateway (RAG + Function Calling)"]
-        D2["Motor de Regras & Score Preditivo"]
-    end
-
-    subgraph Clinical_Front["Frontend Clínico (B2B)"]
-        E1["Dashboard Web Veterinário (Alertas de Risco & LTV)"]
-    end
-
-    A1 -->|JSON / HTTPS| B1
-    A2 -->|Eventos JSON| B1
-    A3 <-->|Mensagens / Áudio| B3
-
-    B1 --> B2
-    B2 --> C1
-    B3 <-->|Contexto do Pet & Histórico| C1
-
-    B3 <-->|Prompt + Histórico de Saúde| D1
-    D1 -->|Entidades Clínicas Extraídas| B2
-    B2 -->|Métricas Consolidadas| D2
-    D2 -->|Score de Gravidade / Alertas| E1
-    C1 -.->|Dados Históricos para Dashboards| E1
-
+![Diagrama Arquitetural Clyvo Care](docs/arquitetura.png)
 
     📂 6. Estrutura do Repositório (Sprint 3)
         

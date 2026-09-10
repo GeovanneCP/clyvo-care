@@ -58,7 +58,9 @@ O diagrama abaixo ilustra o fluxo completo da solução planejada para o projeto
 
 ![Diagrama Arquitetural Clyvo Care](./docs/arquitetura.png)
 
-    📂 6. Estrutura do Repositório (Sprint 3)
+    
+    
+## 📂 6. Estrutura do Repositório (Sprint 3)
         
         Nesta sprint, o repositório disponibiliza a especificação arquitetural completa e a demonstração funcional em código (PoC) do componente de Inteligência Artificial:
 

@@ -59,7 +59,7 @@ O diagrama abaixo ilustra o fluxo completo da solução planejada para o projeto
 ```mermaid
 flowchart TD
     subgraph Edge_IoT["Dispositivos e Coleta (Edge / IoT / Visão)"]
-        A1["Sensor Coleira (Wokwi: Acelerômetro/Temp)"]
+        A1["Sensor Coleira (Wokwi: Acelerômetro e Temp)"]
         A2["Câmera Residencial (Script Python CV - Tigela/Pet)"]
         A3["Tutor via WhatsApp / App Clyvo"]
     end
@@ -71,7 +71,7 @@ flowchart TD
     end
 
     subgraph Data_Layer["Camada de Dados (Oracle DB)"]
-        C1[("Oracle Database\n- DDL Barker\n- Procedures de Carga\n- Queries LAG/LEAD")]
+        C1[("Oracle Database - DDL Barker")]
     end
 
     subgraph AI_Engine["Módulo Inteligente (AI & Analytics)"]

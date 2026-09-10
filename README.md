@@ -72,37 +72,40 @@ O diagrama abaixo ilustra o fluxo completo da solução planejada para o projeto
         └── README.md               # Documentação técnica e arquitetural da entrega
 
 
-        Nota sobre o Roadmap de Integração:
+       
+       
+ Nota sobre o Roadmap de Integração:
 
-        A implementação dos endpoints REST em Java Spring Boot, a modelagem física no Oracle DB e a orquestração via Docker/Cloud serão consolidadas na Sprint 4, onde a API consumirá este motor de IA.
+ A implementação dos endpoints REST em Java Spring Boot, a modelagem física no Oracle DB e a orquestração via Docker/Cloud serão consolidadas na Sprint 4, onde a API consumirá este motor de IA.
 
-        🚀 7. Como Executar a Demonstração de IA
+
+## 🚀 7. Como Executar a Demonstração de IA
             
-            Pré-requisitos
-            Python 3.10  ou superior
+Pré-requisitos
+Python 3.10  ou superior
 
-            Passo a Passo
-            Clonar o repositório e entrar na pasta:
+Passo a Passo
+Clonar o repositório e entrar na pasta:
 
 
-            git clone https://github.com/GeovanneCP/clyvo-care.git
-            cd clyvo-care
+git clone https://github.com/GeovanneCP/clyvo-care.git
+cd clyvo-care
 
-            Instalar a dependência de validação:
-            pip install -r ai-engine/requirements.txt
+Instalar a dependência de validação:
+pip install -r ai-engine/requirements.txt
 
-            Executar o script de demonstração:
-            python ai-engine/ai_demo.py
+Executar o script de demonstração:
+python ai-engine/ai_demo.py
 
-            O terminal exibirá:
+O terminal exibirá:
 
-            O texto informal recebido do tutor via WhatsApp simulado;
+O texto informal recebido do tutor via WhatsApp simulado;
 
-            A recuperação do contexto da alta hospitalar do pet (RAG);
+A recuperação do contexto da alta hospitalar do pet (RAG);
 
-            A conversão do texto livre em um payload estruturado JSON via Function Calling/Pydantic;
+A conversão do texto livre em um payload estruturado JSON via Function Calling/Pydantic;
 
-            O cálculo multimodal do Score de Gravidade Clínica (0 a 100) integrando os dados de IoT e visão computacional simulados.
+O cálculo multimodal do Score de Gravidade Clínica (0 a 100) integrando os dados de IoT e visão computacional simulados.
 
 
 ---

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClyvoCare.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9c21c29751de70f4c68872957f610dab7452a01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1b2036a9688e4f524d87eabc33bac6c7ee77480")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClyvoCare.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClyvoCare.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

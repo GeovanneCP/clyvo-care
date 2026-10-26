@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj": {}
+    "C:\\Dev\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj": {
+    "C:\\Dev\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
+        "projectUniqueName": "C:\\Dev\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
         "projectName": "ClyvoCare.API",
-        "projectPath": "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
+        "projectPath": "C:\\Dev\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
         "packagesPath": "C:\\Users\\geova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\obj\\",
+        "outputPath": "C:\\Dev\\clyvo-care\\backend-dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

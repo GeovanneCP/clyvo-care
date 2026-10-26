@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dn3DZOF8W+s=",
+  "dgSpecHash": "1bq6+v0BUxw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\geova\\OneDrive\\Desktop\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
+  "projectFilePath": "C:\\Dev\\clyvo-care\\backend-dotnet\\ClyvoCare.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\geova\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\geova\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

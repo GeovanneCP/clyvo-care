@@ -119,27 +119,44 @@ clyvo-care/
 
 ## 💻 6. Pré-requisitos de InstalaçãoAntes de executar o ecossistema, 
 
-certifique-se de possuir instalado na máquina:.NET SDK 8.0 ou superior (dotnet --version)Python 3.10 ou superior (python --version)Git(Recomendado para Windows): Clonar ou mover o projeto fora de pastas gerenciadas por nuvem (como OneDrive) para evitar travas de compilação por sincronização (exemplo: C:\Dev\clyvo-care).
+certifique-se de possuir instalado na máquina:.NET SDK 8.0 ou superior (dotnet --version)Python 3.10 ou superior (python --version)
 
-### 🚀 7. Como Executar 
+Git(Recomendado para Windows): Clonar ou mover o projeto fora de pastas gerenciadas por nuvem (como OneDrive) para evitar travas de compilação por sincronização (exemplo: C:\Dev\clyvo-care).
 
-os Serviços Passo a PassoPara que a integração funcione, os dois serviços devem ser iniciados simultaneamente em terminais separados.
+### 🚀 7. Como Executar os Serviços Passo a Passo
+
+Para que a integração funcione, os dois serviços devem ser iniciados simultaneamente em terminais separados.
 # Passo 1: Iniciar o Microserviço de IA (Python FastAPI)
-Abra um terminal na pasta raiz do projeto (clyvo-care).Instale as dependências necessárias:
+Abra um terminal na pasta raiz do projeto (clyvo-care).
 
-Bashpip install -r ai-engine/requirements.txt
+Instale as dependências necessárias:
+
+pip install -r ai-engine/requirements.txt
 
 (Caso não possua o FastAPI e Uvicorn no requirements, instale diretamente com pip install fastapi uvicorn pydantic).
 
 Inicie o servidor FastAPI na porta 5000:
 
-Bashpython -m uvicorn main:app --app-dir ai-engine --port 5000 --reload
-Validação: O terminal exibirá:PlaintextINFO:     Uvicorn running on [http://127.0.0.1:5000](http://127.0.0.1:5000) (Press CTRL+C to quit)
+python -m uvicorn main:app --app-dir ai-engine --port 5000 --reload
+
+Validação: O terminal exibirá:
+
+INFO:     Uvicorn running on [http://127.0.0.1:5000](http://127.0.0.1:5000) (Press CTRL+C to quit)
+
 INFO:     Application startup complete.
 
-# Passo 2: Iniciar a API Backend (.NET 8)Abra um segundo terminal e acesse a pasta do projeto .NET:Bashcd backend-dotnet
-Compile a solução garantindo integridade de binários:Bashdotnet build /p:UseSharedCompilation=false
-Inicie a API .NET:Bashdotnet run
+# Passo 2: Iniciar a API Backend (.NET 8)
+
+Abra um segundo terminal e acesse a pasta do projeto .NET:
+
+cd backend-dotnet
+Compile a solução garantindo integridade de binários:
+
+dotnet build /p:UseSharedCompilation=false
+Inicie a API .NET:
+
+dotnet run
+
 Validação: O Kestrel iniciará os ouvintes HTTP e HTTPS, disponibilizando o serviço na porta 5145 (ou na porta configurada no seu launchSettings.json).
 
 ### 🧪 8. Teste e Validação da Integração via Swagger

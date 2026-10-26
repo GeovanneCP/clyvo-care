@@ -114,6 +114,9 @@ clyvo-care/
 │   ├── Program.cs                 # Configuração de injeção de dependência e CORS
 │   └── ClyvoCare.API.csproj       # Projeto .NET 8
 └── README.md                      # Documentação técnica completa
+
+```
+
 💻 6. Pré-requisitos de InstalaçãoAntes de executar o ecossistema, certifique-se de possuir instalado na máquina:.NET SDK 8.0 ou superior (dotnet --version)Python 3.10 ou superior (python --version)Git(Recomendado para Windows): Clonar ou mover o projeto fora de pastas gerenciadas por nuvem (como OneDrive) para evitar travas de compilação por sincronização (exemplo: C:\Dev\clyvo-care).🚀 7. Como Executar os Serviços Passo a PassoPara que a integração funcione, os dois serviços devem ser iniciados simultaneamente em terminais separados.Passo 1: Iniciar o Microserviço de IA (Python FastAPI)Abra um terminal na pasta raiz do projeto (clyvo-care).Instale as dependências necessárias:Bashpip install -r ai-engine/requirements.txt
 (Caso não possua o FastAPI e Uvicorn no requirements, instale diretamente com pip install fastapi uvicorn pydantic).Inicie o servidor FastAPI na porta 5000:Bashpython -m uvicorn main:app --app-dir ai-engine --port 5000 --reload
 Validação: O terminal exibirá:PlaintextINFO:     Uvicorn running on [http://127.0.0.1:5000](http://127.0.0.1:5000) (Press CTRL+C to quit)

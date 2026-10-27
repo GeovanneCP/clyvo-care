@@ -150,9 +150,11 @@ INFO:     Application startup complete.
 Abra um segundo terminal e acesse a pasta do projeto .NET:
 
 cd backend-dotnet
+
 Compile a solução garantindo integridade de binários:
 
 dotnet build /p:UseSharedCompilation=false
+
 Inicie a API .NET:
 
 dotnet run

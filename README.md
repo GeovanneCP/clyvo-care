@@ -171,13 +171,20 @@ Preencha o parâmetro de query:
 
 petId: pet-bob-01
 
-No campo Request body (application/json), insira o payload estruturado de teste:JSON
+No campo Request body (application/json), insira o payload estruturado de teste:
+
+JSON
 
 {
+
   "relatoTutor": "Ele está com muita dor na pata traseira, chorando muito e não dei o remédio porque ele vomitou.",
+
   "temperatura": 39.8,
+  
   "atividade": "LETHARGIC",
+  
   "refeicoes": 0
+
 }
 
 Clique em Execute.
@@ -187,35 +194,65 @@ Clique em Execute.
 (HTTP 200 OK)A requisição orquestrará a chamada entre as pilhas tecnológicas e devolverá o diagnóstico consolidado com HTTP status 200:
 
 JSON{
+
   "status": "Sucesso",
+
   "petId": "pet-bob-01",
+  
   "dadosClinicos": {
+    
     "pet_id": "pet-bob-01",
+    
     "comeu_bem": true,
+    
     "bebeu_agua": true,
+    
     "tomou_medicacao": false,
+    
     "nivel_dor": 7,
+    
     "sintomas": [
+    
       "vomito",
+      
       "chorando"
+    
     ],
+    
     "tutor_ansioso": false
+  
   },
+  
   "avaliacaoRisco": {
+  
     "pet_id": "pet-bob-01",
+    
     "timestamp": "2026-10-26T20:33:10.202842",
+    
     "score_risco": 100,
+    
     "classificacao": "CRÍTICO",
+    
     "fatores_detectados": [
+    
       "Quebra de adesão medicamentosa prescrita",
+      
       "Dor informada em patamar alto (7/10)",
+      
       "Hipertermia / Febre detectada no IoT (39.8°C)",
+      
       "Acelerômetro registrou padrão prolongado de letargia",
+      
       "Câmera registrou ausência de ida à tigela nas últimas 12h"
+    
     ],
+    
     "recomendacao_clinica": "Priorizar atendimento imediato. Notificar veterinário plantonista.",
+    
     "alerta_critico": true
+  
   }
+
 }
 
 ### 👥 Integrantes do Grupo

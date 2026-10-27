@@ -255,6 +255,19 @@ JSON{
 
 }
 
+
+## 📸 Evidências de Execução e Testes
+
+### 1. Integração .NET e IA via Swagger (HTTP 200 OK)
+![Swagger Sucesso](./docs/evidencias/testeswagger.png)
+
+### 2. Execução dos Testes Automatizados (xUnit)
+![Testes xUnit](./docs/evidencias/testunitario.png)
+
+### 3. Microserviço FastAPI em Execução
+![FastAPI Logs](./docs/evidencias/testpy.png)
+
+
 ### 👥 Integrantes do Grupo
 
 Geovanne Coneglian RM562673
